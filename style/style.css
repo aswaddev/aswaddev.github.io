@@ -172,6 +172,13 @@ section#hero #left {
     padding: 10px;
 }
 
+
+
+section#hero #left h1 span#red-accent {
+    color: #c31432;
+}
+
+
 section#hero #left button {
     border: none;
     background: #c31432;
