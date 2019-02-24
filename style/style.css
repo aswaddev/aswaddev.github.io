@@ -92,7 +92,7 @@ a {
 }
 
 nav {
-    position: absolute;
+    position: relative;
     animation-name: nav-slide;
     animation-delay: 4.4s;
     animation-duration: 0.5s;
