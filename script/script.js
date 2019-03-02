@@ -18,7 +18,7 @@ function openNavbar() {
 		navBurger.classList.remove('mdi-backburger');
 	} else {
 		navButton.classList.add('open');
-		rootContainer.style.left = "50%";
+		rootContainer.style.left = "100%";
 		overlayMenu.style.left = "50%";
 		navBurger.classList.remove('mdi-forwardburger');
 		navBurger.classList.add('mdi-backburger');
