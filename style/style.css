@@ -183,6 +183,7 @@ section#hero #left {
 	padding: 50px;
 }
 
+section#hero #left #call-to-action {}
 
 
 section#hero #left h1 span#red-accent {
@@ -727,8 +728,9 @@ footer {
 @media screen and (max-width:390px) {
 
 	section#hero #left button {
+		box-sizing: border-box;
 		width: 100%;
-		padding: 15px 15px;
+		margin: 10px 0px;
 	}
 }
 
