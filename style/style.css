@@ -8,12 +8,12 @@
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body {
 	margin: 0;
 	font-family: Raleway, sans-serif;
-	overflow-x: hidden;
 }
 
 h1,
@@ -50,11 +50,6 @@ a {
 	margin: auto;
 	width: 170px;
 	height: 10px;
-}
-
-#root-container {
-	position: relative;
-	transition: left 300ms;
 }
 
 .container {

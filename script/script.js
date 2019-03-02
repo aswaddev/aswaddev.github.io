@@ -10,19 +10,13 @@ for (var link of navLinks) {
 navButton.addEventListener('click', openNavbar);
 
 function openNavbar() {
-	if (navButton.classList.contains('open')) {
-		navButton.classList.remove('open');
-		rootContainer.style.left = "0%";
+	if (navBurger.classList.contains('mdi-backburger')) {
 		overlayMenu.style.left = "-100%";
-		navBurger.classList.add('mdi-forwardburger');
 		navBurger.classList.remove('mdi-backburger');
-		document.body.style.overflowY = "scroll";
+		navBurger.classList.add('mdi-forwardburger');
 	} else {
-		navButton.classList.add('open');
-		rootContainer.style.left = "100%";
 		overlayMenu.style.left = "0%";
 		navBurger.classList.remove('mdi-forwardburger');
 		navBurger.classList.add('mdi-backburger');
-		document.body.style.overflowY = "hidden";
 	}
 }
