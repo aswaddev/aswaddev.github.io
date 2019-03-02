@@ -246,8 +246,8 @@ section#about #service-row .col {
 }
 
 section#about #service-row .col p {
+	text-align: center;
 	padding: 14px;
-	text-align: justify;
 }
 
 section#about #about-row {
@@ -563,6 +563,12 @@ footer {
 }
 
 @media screen and (max-width:900px) {
+
+
+	#overlay-1,
+	#overlay-2 {
+		font-size: 15px;
+	}
 
 	nav {
 		display: flex;
