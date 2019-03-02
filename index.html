@@ -36,8 +36,8 @@
 				<h5>A Full-Stack Developer</h5>
 				<p>Currently I'm a student, however I'm open for freelance work</p>
 				<div>
-					<button>Explore Projects <i class="mdi mdi-arrow-right-bold"></i></button>
-					<button>Get In Touch</button>
+					<a href="#portfolio"><button>Explore Projects <i class="mdi mdi-arrow-right-bold"></i></button></a>
+					<a href="#contact"><button>Get In Touch</button></a>
 				</div>
 			</div>
 			<div id="right">
@@ -197,16 +197,17 @@
 			<h1>CONTACT</h1>
 			<div class="underline"></div>
 			<h4>Have a question or want to work together?</h4>
-			<form action="">
-				<input type="text" placeholder="Name">
-				<input type="email" placeholder="Your Email">
-				<textarea name="message" placeholder="Your Message"></textarea>
-				<input type="submit" value="SUBMIT">
+			<form action="https://formspree.io/aswad.fullstacksquad@gmail.com" method="post">
+				<input type="text" placeholder="Name" required>
+				<input type="email" name="_replyto" placeholder="Your Email" required>
+				<textarea name="message" placeholder="Your Message" required></textarea>
+				<input type="hidden" name="_subject" value="aswaddev.github.io" />
+				<input type="submit" value="SEND">
 			</form>
 		</div>
 	</section>
 	<footer>
-		&copy; 2019 AswadAli.com
+		&copy; 2019 aswaddev.github.io
 	</footer>
 </body>
 

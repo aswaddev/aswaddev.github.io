@@ -65,6 +65,10 @@ a {
 	animation-fill-mode: forwards;
 }
 
+#overlay-2 h1 {
+	padding: 20px;
+}
+
 #overlay-3 {
 	z-index: 1;
 	display: flex;
@@ -568,7 +572,7 @@ footer {
 
 	#overlay-1,
 	#overlay-2 {
-		font-size: 15px;
+		font-size: 20px;
 	}
 
 	nav {
