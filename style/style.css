@@ -581,6 +581,13 @@ footer {
 }
 
 @media screen and (max-width:1200px) {
+
+	#overlay-1,
+	#overlay-2 {
+		display: none;
+		animation: none;
+	}
+
 	section#about .container {
 		width: 100%;
 		margin: 0;
