@@ -12,7 +12,6 @@ html {
 
 body {
 	margin: 0;
-	overflow-x: hidden;
 	font-family: Raleway, sans-serif;
 }
 
@@ -53,7 +52,7 @@ a {
 }
 
 .container {
-	width: 90%;
+	width: 100%;
 	margin: auto;
 	box-sizing: border-box;
 }
@@ -337,7 +336,7 @@ section#about #about-row ul li {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	padding: 10px;
+	padding: 10px 0px;
 	height: 50px;
 }
 
@@ -588,6 +587,20 @@ footer {
 		animation: none;
 	}
 
+	#overlay-3 {
+		animation: none;
+		height: 50px;
+	}
+
+	nav {
+		animation: none;
+	}
+
+	nav ul li {
+		animation: none;
+		opacity: 1;
+	}
+
 	section#about .container {
 		width: 100%;
 		margin: 0;
@@ -618,11 +631,7 @@ footer {
 	}
 
 	section#about #about-row ul li {
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-		padding: 10px;
+		padding: 10px 0px;
 		min-height: 40px;
 		max-height: 50px;
 	}
