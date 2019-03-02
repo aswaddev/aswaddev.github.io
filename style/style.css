@@ -13,7 +13,15 @@ html {
 body {
 	margin: 0;
 	font-family: Raleway, sans-serif;
+	overflow-x: hidden;
 }
+
+/*
+.container {
+	position: relative;
+	left: 50%;
+}
+*/
 
 h1,
 h2,
@@ -49,6 +57,11 @@ a {
 	margin: auto;
 	width: 170px;
 	height: 10px;
+}
+
+#root-container {
+	position: relative;
+	transition: left 300ms;
 }
 
 .container {
@@ -113,7 +126,7 @@ a {
 	animation-fill-mode: forwards;
 }
 
-nav {
+#overlay-3 nav {
 	position: relative;
 	animation-name: nav-slide;
 	animation-delay: 4.4s;
@@ -122,11 +135,11 @@ nav {
 	animation-timing-function: ease-in-out;
 }
 
-nav ul {
+#overlay-3 nav ul {
 	list-style-type: none;
 }
 
-nav ul li {
+#overlay-3 nav ul li {
 	display: inline;
 	padding: 0 20px;
 	color: #fff;
@@ -139,17 +152,135 @@ nav ul li {
 	animation-timing-function: ease-in-out;
 }
 
-nav ul li:last-child {
+#overlay-3 nav ul li:last-child {
 	border-right: none;
 }
 
-nav ul li a {
+#overlay-3 nav ul li a {
 	transition: all 0.2s;
 }
 
-nav ul li a:hover {
+#overlay-3 nav ul li a:hover {
 	font-weight: bold;
 	font-size: 17px;
+}
+
+#nav-icon-bg {
+	display: none;
+	background: #333;
+	padding: 45px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+
+#nav-icon {
+	display: none;
+	width: 50px;
+	height: 45px;
+	position: fixed;
+	z-index: 6;
+	top: 0px;
+	left: 20px;
+	margin: 20px auto;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+}
+
+#nav-icon span {
+	display: block;
+	position: absolute;
+	height: 9px;
+	width: 100%;
+	margin: auto;
+	background: #fff;
+	border-radius: 0px;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+	top: 0px;
+}
+
+#nav-icon span:nth-child(2),
+#nav-icon span:nth-child(3) {
+	top: 18px;
+}
+
+#nav-icon span:nth-child(4) {
+	top: 36px;
+}
+
+#nav-icon.open span:nth-child(1) {
+	top: 18px;
+	width: 0%;
+	left: 50%;
+}
+
+#nav-icon.open span:nth-child(2) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+#nav-icon.open span:nth-child(4) {
+	top: 18px;
+	width: 0%;
+	left: 50%;
+}
+
+#overlay-menu {
+	box-sizing: border-box;
+	background: #333;
+	color: #fff;
+	width: 50%;
+	height: 100vh;
+	position: fixed;
+	z-index: 4;
+	transition: left 300ms;
+	left: -50%;
+}
+
+#overlay-menu ul {
+	margin: 130px 0;
+	padding: 0;
+}
+
+#overlay-menu ul li:first-child {
+	padding: 0px;
+}
+
+#overlay-menu ul li {
+	display: block;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	padding: 20px;
 }
 
 section#hero .container {
@@ -227,6 +358,7 @@ section#hero #right {
 	width: 50%;
 	height: 100vh;
 	background-image: url('../img/349.jpg');
+	background-position: left top;
 	background-position: right;
 	background-size: 200%;
 	background-repeat: no-repeat;
@@ -307,9 +439,10 @@ section#about #about-row .col#about-me p {
 }
 
 section#about #about-row #my-image {
-	background-image: url(../img/349.jpg);
+	background-image: url("../img/pic%20(3).jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 	width: 200px;
 	height: 200px;
 	color: #c31432;
@@ -445,7 +578,7 @@ section#portfolio .card:hover .image {
 section#portfolio .card .image {
 	width: 100%;
 	height: 80%;
-	background-image: url(..//img/WebDev.jpg);
+	background-image: url(..//img/349.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 110%;
@@ -596,11 +729,11 @@ footer {
 		height: 50px;
 	}
 
-	nav {
+	#overlay-3 nav {
 		animation: none;
 	}
 
-	nav ul li {
+	#overlay-3 nav ul li {
 		animation: none;
 		opacity: 1;
 	}
@@ -677,7 +810,7 @@ footer {
 		font-size: 20px;
 	}
 
-	nav {
+	#overlay-3 nav {
 		display: none;
 	}
 
@@ -685,8 +818,13 @@ footer {
 		display: none;
 	}
 
-	nav ul {
+	#overlay-3 nav ul {
 		padding: 0;
+	}
+
+	#nav-icon,
+	#nav-icon-bg {
+		display: block;
 	}
 
 	section#hero .container {
