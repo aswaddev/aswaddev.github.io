@@ -74,8 +74,7 @@ a {
 	background: -webkit-linear-gradient(to left, #240b36, #c31432);
 	background: linear-gradient(to left, #240b36, #c31432);
 	animation-name: partial-slide;
-	/*    animation-delay: 3.5s;*/
-	animation-delay: 0s;
+	animation-delay: 3.5s;
 	animation-timing-function: ease-in-out;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
@@ -84,8 +83,7 @@ a {
 nav {
 	position: relative;
 	animation-name: nav-slide;
-	/*    animation-delay: 4.4s;*/
-	animation-delay: 1s;
+	animation-delay: 4.4s;
 	animation-duration: 0.5s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
@@ -102,8 +100,7 @@ nav ul li {
 	border-right: 1px solid #fff;
 	opacity: 0;
 	animation-name: nav-show;
-	/*    animation-delay: 4.4s;*/
-	animation-delay: 1s;
+	animation-delay: 4.4s;
 	animation-duration: 0.5s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
