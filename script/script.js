@@ -13,13 +13,13 @@ function openNavbar() {
 	if (navButton.classList.contains('open')) {
 		navButton.classList.remove('open');
 		rootContainer.style.left = "0%";
-		overlayMenu.style.left = "-50%";
+		overlayMenu.style.left = "-100%";
 		navBurger.classList.add('mdi-forwardburger');
 		navBurger.classList.remove('mdi-backburger');
 	} else {
 		navButton.classList.add('open');
 		rootContainer.style.left = "100%";
-		overlayMenu.style.left = "50%";
+		overlayMenu.style.left = "0%";
 		navBurger.classList.remove('mdi-forwardburger');
 		navBurger.classList.add('mdi-backburger');
 	}
