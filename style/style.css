@@ -473,6 +473,10 @@ section#portfolio .card#robocon .image {
 	background-image: url("https://source.unsplash.com/random/1440x900/?robots");
 }
 
+section#portfolio .card#fullstacksquad .image {
+	background-image: url("https://source.unsplash.com/random/1440x900/?developer,html,css,blog,code");
+}
+
 section#portfolio .card .title h3 {
 	margin: 0;
 	padding: 0;
