@@ -546,7 +546,8 @@ footer {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	section#contact .container {
+	section#contact .container,
+	section#portfolio .container {
 		padding: 50px 20px;
 	}
 
@@ -562,7 +563,7 @@ footer {
 
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:768px) {
 
 
 	#overlay-1,
@@ -571,11 +572,11 @@ footer {
 	}
 
 	nav {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		animation: none;
-		width: 100%;
+		display: none;
+	}
+
+	#overlay-3 {
+		display: none;
 	}
 
 	nav ul {
@@ -587,7 +588,7 @@ footer {
 		margin: auto;
 		display: flex;
 		flex-direction: column;
-		font-size: 35px;
+		font-size: 25px;
 		line-height: 0.9;
 	}
 
@@ -614,6 +615,7 @@ footer {
 	section#hero #left button {
 		box-shadow: 0px 4px 0px 0px #c31432;
 		color: #c31432;
+		margin: 10px;
 		top: 0;
 	}
 
@@ -634,6 +636,14 @@ footer {
 	section#contact form {
 		width: 100%;
 		margin: 0;
+	}
+}
+
+@media screen and (max-width:390px) {
+
+	section#hero #left button {
+		width: 100%;
+		padding: 15px 15px;
 	}
 }
 
