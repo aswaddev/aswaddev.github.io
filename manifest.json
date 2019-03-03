@@ -1,0 +1,16 @@
+{
+	"name": "AswadDev",
+	"short_name": "AswadDev",
+	"start_url": ".",
+	"display": "standalone",
+	"background_color": "#c31432",
+	"theme_color": "#c31432",
+	"description": "This website showcases my work and services that I offer as a freelance web developer.",
+	"lang": "en-US",
+	"orientation": "portrait-primary",
+	"icons": [{
+		"src": "imag/349-min.jpg",
+		"sizes": "472x72 96x96 128x128 256x256",
+		"type": "image/jpg"
+  }]
+}

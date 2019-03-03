@@ -284,7 +284,7 @@ section#hero #left button:hover i {
 section#hero #right {
 	width: 50%;
 	height: 100vh;
-	background-image: url('../img/349.jpg');
+	background-image: url('../img/349-min.jpg');
 	background-position: left top;
 	background-position: right;
 	background-size: 200%;
@@ -383,7 +383,7 @@ section#about #about-row .col#about-me a:hover {
 }
 
 section#about #about-row #my-image {
-	background-image: url("../img/pic%20(3).jpg");
+	background-image: url("../img/pic%20(3)-min.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -523,7 +523,7 @@ section#portfolio .card:hover .image {
 section#portfolio .card .image {
 	width: 100%;
 	height: 80%;
-	background-image: url(..//img/349.jpg);
+	background-image: url(..//img/349-min.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 110%;
@@ -632,6 +632,13 @@ section#contact form input[type=submit]:hover {
 section#contact form textarea {
 	height: 100px;
 }
+
+
+section#contact form label {
+	float: left;
+	padding-bottom: 15px;
+}
+
 
 section#social .container {
 	display: flex;

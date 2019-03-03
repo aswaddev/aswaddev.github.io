@@ -11,7 +11,8 @@
 	<meta name="copyright" content="Aswad Ali">
 	<meta name="author" content="Aswad Ali">
 	<title>Aswad Ali | A Full-Stack Web Developer</title>
-	<link rel="icon" href="./img/349.jpg">
+	<link rel="icon" href="./img/349-min.jpg">
+	<link rel="manifest" href="/manifest.json">
 	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.5.95/css/materialdesignicons.min.css">
 	<link rel="stylesheet" href="./style/style.css">
 </head>
@@ -94,8 +95,10 @@
 					<h2>About Me</h2>
 					<div id="my-image"></div>
 					<p>Hi, I'm Aswad. I'm a Full-Stack Developer. Being productive has always been one of my biggest aims and that's one of the biggest reason why I love web development and programming in general.</p>
-					<ul>
+					<p>
 						Some of my favorite projects include:
+					</p>
+					<ul>
 						<li>An Entertainment site with a custom-built CMS which I built on Node.JS.</li>
 						<li>A Blog site powered by PHP which was also hooked up with a custom CMS.</li>
 						<li>A MVC Framework for PHP which I love using when building personal projects.</li>
@@ -225,9 +228,12 @@
 			<div class="underline"></div>
 			<h4>Have a question or want to work together?</h4>
 			<form action="https://formspree.io/aswad.fullstacksquad@gmail.com" method="post">
-				<input type="text" placeholder="Name" required>
-				<input type="email" name="_replyto" placeholder="Your Email" required>
-				<textarea name="message" placeholder="Your Message" required></textarea>
+				<label for="name">Name:</label>
+				<input type="text" placeholder="Name" id="name" required>
+				<label for="email">Email:</label>
+				<input type="email" name="_replyto" placeholder="Your Email" id="email" required>
+				<label for="message">Message:</label>
+				<textarea name="message" placeholder="Your Message" id="message" required></textarea>
 				<input type="hidden" name="_subject" value="aswaddev.github.io" />
 				<input type="submit" value="SEND">
 			</form>
