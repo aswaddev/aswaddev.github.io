@@ -384,7 +384,7 @@ section#about #about-row .col#about-me a:hover {
 
 section#about #about-row #my-image {
 	background-image: url("../img/pic%20(3)-min.jpg");
-	background-size: cover;
+	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 200px;
