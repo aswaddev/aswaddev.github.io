@@ -349,8 +349,25 @@ section#about #about-row .col {
 }
 
 
-section#about #about-row .col#about-me p {
-	text-align: center;
+section#about #about-row .col#about-me p,
+section#about #about-row .col#about-me ul {
+	line-height: 1.5;
+	text-align: left;
+	padding: 0 40px;
+	list-style-type: circle;
+}
+
+section#about #about-row .col#about-me ul li {
+	padding: 5px 0px;
+}
+
+section#about #about-row .col#about-me a {
+	font-weight: bold;
+}
+
+
+section#about #about-row .col#about-me a:hover {
+	text-decoration: underline;
 }
 
 section#about #about-row #my-image {
@@ -374,12 +391,12 @@ section#about #about-row .col p {
 	text-align: justify;
 }
 
-section#about #about-row ul {
+section#about #about-row #my-skills ul {
 	list-style-type: none;
 	padding: 0px 40px;
 }
 
-section#about #about-row ul li {
+section#about #about-row #my-skills ul li {
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -388,7 +405,7 @@ section#about #about-row ul li {
 	height: 50px;
 }
 
-section#about #about-row ul li label {
+section#about #about-row #my-skills ul li label {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -401,26 +418,26 @@ section#about #about-row ul li label {
 	border-bottom-left-radius: 20px;
 }
 
-section#about #about-row ul li .progress {
+section#about #about-row #my-skills ul li .progress {
 	width: 80%;
 	height: 100%;
 	margin: 20px 0px;
 }
 
 
-section#about #about-row ul li .progress span {
+section#about #about-row #my-skills ul li .progress span {
 	color: #240b36;
 	font-weight: bold;
 }
 
-section#about #about-row ul li .progress #html5-skills,
-section#about #about-row ul li .progress #css3-skills,
-section#about #about-row ul li .progress #javascript-skills,
-section#about #about-row ul li .progress #reactjs-skills,
-section#about #about-row ul li .progress #mern-skills,
-section#about #about-row ul li .progress #php-skills,
-section#about #about-row ul li .progress #database-skills,
-section#about #about-row ul li .progress #ui-skills {
+section#about #about-row #my-skills ul li .progress #html5-skills,
+section#about #about-row #my-skills ul li .progress #css3-skills,
+section#about #about-row #my-skills ul li .progress #javascript-skills,
+section#about #about-row #my-skills ul li .progress #reactjs-skills,
+section#about #about-row #my-skills ul li .progress #mern-skills,
+section#about #about-row #my-skills ul li .progress #php-skills,
+section#about #about-row #my-skills ul li .progress #database-skills,
+section#about #about-row #my-skills ul li .progress #ui-skills {
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -432,20 +449,20 @@ section#about #about-row ul li .progress #ui-skills {
 
 
 
-section#about #about-row ul li .progress #html5-skills,
-section#about #about-row ul li .progress #css3-skills,
-section#about #about-row ul li .progress #database-skills {
+section#about #about-row #my-skills ul li .progress #html5-skills,
+section#about #about-row #my-skills ul li .progress #css3-skills,
+section#about #about-row #my-skills ul li .progress #database-skills {
 	width: 90%;
 }
 
-section#about #about-row ul li .progress #javascript-skills,
-section#about #about-row ul li .progress #mern-skills,
-section#about #about-row ul li .progress #php-skills {
+section#about #about-row #my-skills ul li .progress #javascript-skills,
+section#about #about-row #my-skills ul li .progress #mern-skills,
+section#about #about-row #my-skills ul li .progress #php-skills {
 	width: 85%;
 }
 
-section#about #about-row ul li .progress #reactjs-skills,
-section#about #about-row ul li .progress #ui-skills {
+section#about #about-row #my-skills ul li .progress #reactjs-skills,
+section#about #about-row #my-skills ul li .progress #ui-skills {
 	width: 80%;
 }
 
@@ -678,21 +695,21 @@ footer {
 	}
 
 
-	section#about #about-row ul {
+	section#about #about-row #my-skills ul {
 		padding: 0px 5px;
 	}
 
-	section#about #about-row ul li {
+	section#about #about-row #my-skills ul li {
 		padding: 10px 0px;
 		min-height: 40px;
 		max-height: 50px;
 	}
 
-	section#about #about-row ul li label {
+	section#about #about-row #my-skills ul li label {
 		width: 30%;
 	}
 
-	section#about #about-row ul li .progress {
+	section#about #about-row #my-skills ul li .progress {
 		width: 70%;
 	}
 
