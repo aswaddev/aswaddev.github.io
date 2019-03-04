@@ -507,18 +507,15 @@ section#portfolio .card {
 	top: 0;
 	left: 0;
 	-webkit-transition: all 300ms ease-in-out;
-	transition: all 300ms ease-in-out;
+	transition: all 3000ms ease-in-out;
 }
 
 section#portfolio .card:hover {
 	cursor: pointer;
-	top: 4px;
-	left: 4px;
-	box-shadow: 0px 0px 0px #000;
 }
 
 section#portfolio .card:hover .image {
-	background-size: 130%;
+	background-position: bottom;
 }
 
 section#portfolio .card .image {
@@ -526,26 +523,32 @@ section#portfolio .card .image {
 	height: 80%;
 	background-image: url(..//img/349-min.jpg);
 	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 110%;
-	-webkit-transition: all 300ms ease-in-out;
-	transition: all 300ms ease-in-out;
+	background-position: top center;
+	background-size: cover;
+	-webkit-transition: all 2000ms ease-in-out;
+	transition: all 2000ms ease-in-out;
 }
 
 section#portfolio .card#family-hub .image {
 	background-image: url("https://source.unsplash.com/random/800x600/?cloud");
+	background-image: url("../img/family-hub-1.PNG");
 }
 
 section#portfolio .card#my-blog .image {
 	background-image: url("https://source.unsplash.com/random/800x600/?blog");
+	background-image: url("../img/my-blog-1.PNG");
+	-webkit-transition: all 8000ms ease-in-out;
 }
 
 section#portfolio .card#mvc-lite .image {
 	background-image: url("https://source.unsplash.com/random/800x600/?framework");
+	background-image: url("../img/mvclite-1.PNG");
+	background-position: center;
 }
 
 section#portfolio .card#share-posts .image {
 	background-image: url("https://source.unsplash.com/random/800x600/?social");
+	background-image: url("../img/shareposts-1.PNG");
 }
 
 section#portfolio .card#robocon .image {
@@ -554,6 +557,7 @@ section#portfolio .card#robocon .image {
 
 section#portfolio .card#fullstacksquad .image {
 	background-image: url("https://source.unsplash.com/random/800x600/?developer,html,css,blog,code");
+	background-image: url("../img/fullstacksquad-1.PNG");
 }
 
 section#portfolio .card .title h3 {
