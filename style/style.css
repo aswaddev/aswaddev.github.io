@@ -21,6 +21,7 @@ html {
 body {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
+	background: #fff;
 }
 
 h1,
@@ -286,7 +287,7 @@ section#hero #left button:hover i {
 section#hero #right {
 	width: 50%;
 	height: 100vh;
-	background-image: url('../img/349-min.jpg');
+	background-image: url('../img/illustration.jpg');
 	background-position: left top;
 	background-position: right;
 	background-size: 200%;
@@ -385,7 +386,7 @@ section#about #about-row .col#about-me a:hover {
 }
 
 section#about #about-row #my-image {
-	background-image: url("../img/pic%20(3)-min.jpg");
+	background-image: url("../img/pic.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -522,7 +523,7 @@ section#portfolio .card:hover .image {
 section#portfolio .card .image {
 	width: 100%;
 	height: 80%;
-	background-image: url(..//img/349-min.jpg);
+	background-image: url(..//img/illustration.jpg);
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
@@ -532,7 +533,7 @@ section#portfolio .card .image {
 
 section#portfolio .card#family-hub .image {
 	background-image: url("https://source.unsplash.com/random/800x600/?cloud");
-	background-image: url("../img/family-hub-1.PNG");
+	background-image: url("../img/family-hub-2.PNG");
 }
 
 section#portfolio .card#my-blog .image {
@@ -674,27 +675,6 @@ footer {
 }
 
 @media screen and (max-width:1200px) {
-
-	#overlay-1,
-	#overlay-2 {
-		display: none;
-		animation: none;
-	}
-
-	#overlay-3 {
-		animation: none;
-		height: 50px;
-	}
-
-	#overlay-3 nav {
-		animation: none;
-	}
-
-	#overlay-3 nav ul li {
-		animation: none;
-		opacity: 1;
-	}
-
 	section#about .container {
 		width: 100%;
 		margin: 0;
@@ -761,27 +741,24 @@ footer {
 
 @media screen and (max-width:768px) {
 
-
 	#overlay-1,
-	#overlay-2 {
-		font-size: 20px;
-	}
-
-	#overlay-3 nav {
-		display: none;
-	}
-
+	#overlay-2,
 	#overlay-3 {
-		display: none;
-	}
-
-	#overlay-3 nav ul {
-		padding: 0;
+		background: #fff;
+		z-index: -99999;
 	}
 
 	#nav-icon,
 	#nav-icon-bg {
 		display: block;
+	}
+
+	#nav-icon {
+		z-index: 2;
+	}
+
+	#overlay-menu {
+		z-index: 1;
 	}
 
 	section#hero .container {
@@ -858,8 +835,6 @@ footer {
 		margin: 10px 0px;
 	}
 }
-
-
 
 @keyframes nav-slide {
 	from {
