@@ -10,13 +10,13 @@ for (var link of navLinks) {
 navButton.addEventListener('click', openNavbar);
 
 function openNavbar() {
-	if (navBurger.classList.contains('mdi-backburger')) {
+	if (navBurger.classList.contains('fa-times')) {
 		overlayMenu.style.left = "-100%";
-		navBurger.classList.remove('mdi-backburger');
-		navBurger.classList.add('mdi-forwardburger');
+		navBurger.classList.remove('fa-times');
+		navBurger.classList.add('fa-bars');
 	} else {
 		overlayMenu.style.left = "0%";
-		navBurger.classList.remove('mdi-forwardburger');
-		navBurger.classList.add('mdi-backburger');
+		navBurger.classList.remove('fa-bars');
+		navBurger.classList.add('fa-times');
 	}
 }

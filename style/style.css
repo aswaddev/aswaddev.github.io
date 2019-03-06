@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
 :root {
 	--shade-of-red: #c31432;
 	--shade-of-purple: #240b36;
@@ -337,7 +334,7 @@ section#about #service-row i {
 	color: var(--shade-of-red);
 	text-align: center;
 	background: #fff;
-	padding: 10px;
+	padding: 30px;
 	margin: 17px;
 	display: block;
 }
@@ -532,24 +529,20 @@ section#portfolio .card .image {
 }
 
 section#portfolio .card#family-hub .image {
-	background-image: url("https://source.unsplash.com/random/800x600/?cloud");
 	background-image: url("../img/family-hub-2.PNG");
 }
 
 section#portfolio .card#my-blog .image {
-	background-image: url("https://source.unsplash.com/random/800x600/?blog");
 	background-image: url("../img/my-blog-1.PNG");
 	-webkit-transition: all 8000ms ease-in-out;
 }
 
 section#portfolio .card#mvc-lite .image {
-	background-image: url("https://source.unsplash.com/random/800x600/?framework");
 	background-image: url("../img/mvclite-1.PNG");
 	background-position: center;
 }
 
 section#portfolio .card#share-posts .image {
-	background-image: url("https://source.unsplash.com/random/800x600/?social");
 	background-image: url("../img/shareposts-1.PNG");
 }
 
@@ -558,7 +551,6 @@ section#portfolio .card#robocon .image {
 }
 
 section#portfolio .card#fullstacksquad .image {
-	background-image: url("https://source.unsplash.com/random/800x600/?developer,html,css,blog,code");
 	background-image: url("../img/fullstacksquad-1.PNG");
 }
 
