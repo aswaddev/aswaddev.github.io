@@ -849,6 +849,14 @@ footer {
 	}
 }
 
+
+@media screen and (max-height:330px) {
+	section#hero .container {
+		padding-top: 20vh;
+	}
+}
+
+
 @keyframes nav-slide {
 	from {
 		left: -5%
