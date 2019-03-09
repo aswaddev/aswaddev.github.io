@@ -320,6 +320,12 @@ section#contact h1 {
 	padding: 10px;
 }
 
+section#about h2,
+section#portfolio h2,
+section#contact h2 {
+	padding: 20px;
+}
+
 
 section#about #service-row {
 	margin-top: 50px;
@@ -349,7 +355,7 @@ section#about #service-row .col p {
 }
 
 section#about #about-row {
-	margin-top: 50px;
+	margin: 20px 0px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -366,7 +372,8 @@ section#about #about-row .col#about-me ul {
 	line-height: 1.5;
 	text-align: left;
 	padding: 0 40px;
-	list-style-type: circle;
+	list-style-type: none;
+	text-align: center;
 }
 
 section#about #about-row .col#about-me ul li {
@@ -396,6 +403,7 @@ section#about #about-row #my-image {
 	display: block;
 	margin: auto;
 	border-radius: 50%;
+	box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.5);
 }
 
 section#about #about-row .col p {
@@ -405,7 +413,8 @@ section#about #about-row .col p {
 
 section#about #about-row #my-skills ul {
 	list-style-type: none;
-	padding: 0px 40px;
+	margin: 0;
+	padding: 0;
 }
 
 section#about #about-row #my-skills ul li {
@@ -428,12 +437,13 @@ section#about #about-row #my-skills ul li label {
 	background: #000;
 	height: 100%;
 	border-bottom-left-radius: 20px;
+	box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.3);
 }
 
 section#about #about-row #my-skills ul li .progress {
-	width: 80%;
+	width: 100%;
 	height: 100%;
-	margin: 20px 0px;
+	box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -455,8 +465,6 @@ section#about #about-row #my-skills ul li .progress #ui-skills {
 	align-items: center;
 	justify-content: center;
 	background: #fff;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
 }
 
 
@@ -679,7 +687,6 @@ footer {
 	}
 
 	section#about #about-row {
-		margin-top: 50px;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
@@ -691,15 +698,13 @@ footer {
 		width: 100%;
 	}
 
-
-	section#about #about-row #my-skills ul {
-		padding: 0px 5px;
+	section#about #about-row .col:last-child {
+		padding-bottom: 50px;
 	}
 
-	section#about #about-row #my-skills ul li {
-		padding: 10px 0px;
-		min-height: 40px;
-		max-height: 50px;
+	section#about #about-row #my-skills ul {
+		width: 80%;
+		margin: auto;
 	}
 
 	section#about #about-row #my-skills ul li label {
@@ -813,6 +818,11 @@ footer {
 		width: 100%;
 	}
 
+	section#about #about-row #my-skills ul {
+		width: 90%;
+		margin: auto;
+	}
+
 	section#contact form {
 		width: 100%;
 		margin: 0;
@@ -825,6 +835,17 @@ footer {
 		box-sizing: border-box;
 		width: 100%;
 		margin: 10px 0px;
+	}
+
+	section#about #about-row .col#about-me {
+		margin: 20px 0px;
+	}
+
+
+	section#about #about-row .col#about-me p,
+	section#about #about-row .col#about-me ul {
+		line-height: 1.5;
+		padding: 0 20px;
 	}
 }
 
