@@ -366,13 +366,52 @@ section#about #about-row .col {
 	width: 50%;
 }
 
+section#about #about-row .col#about-me {
+	flex-direction: row;
+	margin: auto;
+	overflow: hidden;
+	flex-basis: 40%;
+	margin: auto;
+}
+
+
+section#about #about-row .col#about-me .card {
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	overflow: hidden;
+	flex-basis: 40%;
+	margin: auto;
+	box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.3);
+}
+
+section#about #about-row .col#about-me #about-picture {
+	background-image: url("../img/profile.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	flex-basis: 40%;
+	min-height: 600px;
+}
+
+section#about #about-row .col#about-me #about-text {
+	flex-basis: 60%;
+	background: rgba(255, 255, 255, 0.7);
+	color: #000;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 600px;
+}
+
+section#about #about-row .col#about-me a {
+	color: var(--shade-of-red);
+}
 
 section#about #about-row .col#about-me p,
 section#about #about-row .col#about-me ul {
 	line-height: 1.5;
-	text-align: left;
-	padding: 0 40px;
-	list-style-type: none;
 	text-align: center;
 }
 
@@ -384,31 +423,12 @@ section#about #about-row .col#about-me a {
 	font-weight: bold;
 }
 
-
 section#about #about-row .col#about-me a:hover {
 	text-decoration: underline;
 }
 
-section#about #about-row #my-image {
-	background-image: url("../img/pic.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	width: 200px;
-	height: 200px;
-	color: var(--shade-of-red);
-	text-align: center;
-	padding: 10px;
-	margin: 17px;
-	display: block;
-	margin: auto;
-	border-radius: 50%;
-	box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.5);
-}
-
 section#about #about-row .col p {
 	padding: 14px;
-	text-align: justify;
 }
 
 section#about #about-row #my-skills ul {
@@ -528,7 +548,7 @@ section#portfolio .card:hover .image {
 section#portfolio .card .image {
 	width: 100%;
 	height: 80%;
-	background-image: url(..//img/illustration.jpg);
+	background-image: url(../img/illustration.jpg);
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
@@ -542,7 +562,8 @@ section#portfolio .card#family-hub .image {
 
 section#portfolio .card#my-blog .image {
 	background-image: url("../img/my-blog-1.PNG");
-	-webkit-transition: all 8000ms ease-in-out;
+	transition: all 5000ms ease-in-out;
+	-webkit-transition: all 5000ms ease-in-out;
 }
 
 section#portfolio .card#mvc-lite .image {
@@ -555,7 +576,9 @@ section#portfolio .card#share-posts .image {
 }
 
 section#portfolio .card#robocon .image {
-	background-image: url("https://source.unsplash.com/random/800x600/?robots");
+	background-image: url("../img/robocon-1.PNG");
+	transition: all 3000ms ease-in-out;
+	-webkit-transition: all 3000ms ease-in-out;
 }
 
 section#portfolio .card#fullstacksquad .image {
@@ -687,15 +710,16 @@ footer {
 	}
 
 	section#about #about-row {
-		display: flex;
 		flex-direction: column;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		text-align: center;
 	}
 
 	section#about #about-row .col {
 		width: 100%;
+	}
+
+
+	section#about #about-row .col#about-me {
+		width: 80%;
 	}
 
 	section#about #about-row .col:last-child {
@@ -821,6 +845,19 @@ footer {
 	section#about #about-row #my-skills ul {
 		width: 90%;
 		margin: auto;
+	}
+
+	section#about #about-row .col#about-me .card {
+		flex-direction: column;
+		margin: 20px auto;
+	}
+
+	section#about #about-row .col#about-me #about-picture {
+		min-height: 300px;
+	}
+
+	section#about #about-row .col#about-me #about-text {
+		min-height: 300px;
 	}
 
 	section#contact form {
