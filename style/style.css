@@ -576,7 +576,7 @@ section#portfolio .card#share-posts .image {
 }
 
 section#portfolio .card#robocon .image {
-	background-image: url("../img/robocon-1.PNG");
+	background-image: url("../img/robocon-1.png");
 	transition: all 3000ms ease-in-out;
 	-webkit-transition: all 3000ms ease-in-out;
 }
