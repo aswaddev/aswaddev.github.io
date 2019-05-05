@@ -491,18 +491,21 @@ section#about #about-row #my-skills ul li .progress #ui-skills {
 
 section#about #about-row #my-skills ul li .progress #html5-skills,
 section#about #about-row #my-skills ul li .progress #css3-skills,
-section#about #about-row #my-skills ul li .progress #database-skills {
+section#about #about-row #my-skills ul li .progress #javascript-skills{
+	width: 95%;
+}
+
+section#about #about-row #my-skills ul li .progress #database-skills,
+section#about #about-row #my-skills ul li .progress #ui-skills {
 	width: 90%;
 }
 
-section#about #about-row #my-skills ul li .progress #javascript-skills,
 section#about #about-row #my-skills ul li .progress #mern-skills,
 section#about #about-row #my-skills ul li .progress #php-skills {
 	width: 85%;
 }
 
-section#about #about-row #my-skills ul li .progress #reactjs-skills,
-section#about #about-row #my-skills ul li .progress #ui-skills {
+section#about #about-row #my-skills ul li .progress #reactjs-skills {
 	width: 80%;
 }
 
