@@ -65,7 +65,7 @@ body {
 	position: relative;
 	overflow: hidden;
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	padding: 180px 0;
 	animation-fill-mode: forwards;
 	animation-delay: 2000ms;
@@ -94,7 +94,7 @@ body {
 	animation-duration: 500ms;
 	animation-name: slide-up;
 	animation-timing-function: ease-in-out;
-	top: 30vh;
+	top: 0px;
 	opacity: 0;
 }
 
@@ -105,7 +105,7 @@ body {
 	}
 
 	to {
-		top: 50px;
+		top: 0px;
 		opacity: 1;
 	}
 }
