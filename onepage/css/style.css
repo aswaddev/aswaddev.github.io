@@ -74,6 +74,7 @@ body {
 	animation-timing-function: ease-out;
 	background-attachment: fixed;
 	transform: scale(1.2);
+	padding-top: 475px;
 }
 
 @keyframes scale-in {
@@ -233,8 +234,12 @@ nav .bottom img {
 	padding: .3em;
 }
 
-@media screen and(max-width: 600px) {
-	nav ul {
-		display: none !important;
+@media only screen and (max-width: 400px) {
+	nav .top ul {
+		display: none;
+	}
+
+	#header {
+		padding-top: 500px;
 	}
 }
