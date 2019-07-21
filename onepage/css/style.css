@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     z-index: 4;
     animation-fill-mode: forwards;
-    animation-delay: 2000ms;
+    animation-delay: 3000ms;
     animation-duration: 1000ms;
     animation-name: scale-in;
     animation-timing-function: ease-out;
@@ -61,7 +61,7 @@
     position: relative;
     padding: 10px;
     animation-fill-mode: forwards;
-    animation-delay: 3000ms;
+    animation-delay: 4000ms;
     animation-duration: 500ms;
     animation-name: slide-up;
     animation-timing-function: ease-in-out;
@@ -107,7 +107,7 @@
     align-items: center;
     justify-content: center;
     animation-fill-mode: forwards;
-    animation-delay: 2000ms;
+    animation-delay: 3000ms;
     animation-duration: 500ms;
     animation-name: fade-out;
     animation-timing-function: ease-out;
@@ -115,7 +115,7 @@
 
 #loader img {
     animation-fill-mode: forwards;
-    animation-delay: 2000ms;
+    animation-delay: 3000ms;
     animation-duration: 500ms;
     animation-name: scale-out;
     animation-timing-function: ease-out;
