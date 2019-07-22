@@ -24,7 +24,6 @@ footer {
 	top: 0;
 	width: 100%;
 	background-image: url("../images/header.jpg");
-	background-image: url("../images/aeroplane-aircraft-airplane-1856488.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -55,7 +54,6 @@ footer {
 	bottom: 0;
 	left: 0;
 	background-image: url("../images/header-blur.jpg");
-	background-image: url("../images/aeroplane-aircraft-airplane-1856488-blur.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -324,6 +322,10 @@ nav .bottom img {
 
 	.sample-header-section h1 {
 		font-size: 35px;
+	}
+
+	.sample-header-section #call-to-action {
+		bottom: 80px;
 	}
 }
 
