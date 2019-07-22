@@ -320,10 +320,6 @@ nav .bottom img {
 		height: 100vh;
 	}
 
-	.sample-header-section h1 {
-		font-size: 40px;
-	}
-
 	.sample-header-section #call-to-action {
 		bottom: 80px;
 	}
@@ -333,7 +329,7 @@ nav .bottom img {
 		text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 		padding: 10px;
 		position: relative;
-		top: 40px;
+		top: 35px;
 		color: #fcfcfc;
 		letter-spacing: 2px;
 	}
