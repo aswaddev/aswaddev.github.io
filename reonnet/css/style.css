@@ -342,7 +342,7 @@ nav .bottom img {
     }
 
     .sample-header-section h1 {
-        font-size: 37px;
+        font-size: 35px;
         text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
         padding: 10px;
         position: relative;
@@ -353,7 +353,7 @@ nav .bottom img {
 
     #header-text strong {
         font-family: frontage-outline;
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .header-slide-up {
