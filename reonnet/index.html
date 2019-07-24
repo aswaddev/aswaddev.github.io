@@ -9,7 +9,7 @@
 	<link rel="shortcut icon" href="./images/homelogo.png" />
 	<meta name="author" content="Aswad Ali">
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/1c1def59d0.js"></script>
 	<link rel="stylesheet" href="./css/style.css">
 	<title>About Us | Reonnet</title>
@@ -27,21 +27,18 @@
 <body id="body">
 	<nav>
 		<div class="nav-bg"></div>
-		<div class="container">
 			<div class="top">
-				<a href="index.html"><img src="./images/logo-white.png" alt="" id="logo"></a>
-				<ul>
-					<li><a href="#" class="hoverEffect effect2">Portfolio</a></li>
-					<li><a href="#" class="hoverEffect effect2">News@Reonnet</a></li>
-					<li><a href="#" class="hoverEffect effect2">Get in Touch</a></li>
-				</ul>
+				<a href="index.html" id="logo-wrap"><img src="./images/logo-white.png" alt="" id="logo"></a>
+				<div class="menu-burger-wrapper">
+					<div class="trigger menu-trigger">
+						<div class="menu-burger icon-wrapper">
+							<div class="line line-top"></div>
+							<div class="line line-center"></div>
+							<div class="line line-bottom"></div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="bottom">
-				<a href="index.html">
-					<img src="./images/left-arrow.svg" width="20px" alt="">
-				</a>
-			</div>
-		</div>
 	</nav>
 	<div id="loader">
 		<img src="http://d.zaix.ru/doD8.gif" alt="" width="60px" id="loading-gif">
@@ -51,8 +48,8 @@
 		<div class="sample-header-section">
 			<div class="container">
 				<h1 class="header-slide-up" id="header-text">
-					<span>ABOUT</span> <br>
-					<strong>REONNET</strong>
+					ABOUT<br>
+					<span class="hollow">US</span>
 				</h1>
 				<div id="call-to-action">
 					<div class="dot"></div>
@@ -64,9 +61,9 @@
 		<div class="sample-section">
 			<div class="container">
 				<div class="row mx-2">
-					<div class="col-md-12 my-5 paragraph" style="border-left: 2px solid #1a1a1a;">
+					<div class="col-md-12 my-5 paragraph">
 						<div class="row p-3">
-							<div class="col-md-6 offset-md-1 col-sm-12">
+							<div class="col-md-8 col-sm-12">
 								<div class="pb-4">
 									<h6 style="font-weight: bold;">ABOUT US</h6>
 									<small style="color: #91919c; font-size: 11px;">@REONNET</small>
@@ -75,10 +72,10 @@
 									At Reonnet our main aim is to make you available with one of the most systematized and goal oriented web design and development with expertise in marketing as well as software development.
 								</h3>
 							</div>
-							<div class="col-md-2 col-sm-12 offset-md-2">
+							<!-- <div class="col-md-2 col-sm-12 offset-md-2">
 								<i class="fab fa-facebook-f" style="font-size:15px; margin:20px;"></i>
 								<i class="fab fa-twitter" style="font-size:15px; margin:20px;"></i>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -108,50 +105,75 @@
 				</div>
 
 			</div>
-			<!-- <footer class="py-4">
-				<div class="container">
-					<div style="height: 2px; background-color: #1a1a1a; margin-bottom:30px;"></div>
-					<div style="display: flex; align-items: center; justify-content: space-between; ">
-						<div>
-							<p>&copy; 2019 REONETT.COM </p>
-						</div>
-						<div>
-							<i class="fab fa-facebook-f px-3"></i>
-							<i class="fab fa-twitter px-3"></i>
-						</div>
+			<!-- Footer -->
+			<footer>        	
+				<div id="footer-container">
+					<div class="container">
+							<div class="copyright-wrap">            	
+								<div class="copyright-icon"><i class="fa fa-copyright"></i></div>
+								<div class="copyright-text">Copyright</div>
+								<div class="copyright">
+									<p>2019 © <a class="link" target="_blank" href="index.html">REONNET.COM</a></p>
+								</div>
+							</div>
+							
+							<div class="socials-wrap">            	
+								<div class="socials-icon"><i class="fa fa-share-alt"></i></div>
+								<div class="socials-text">Follow Us</div>
+								<ul class="socials">
+									<li><span><a href="https://www.facebook.com/Reonnet-318071822059070/" target="_blank">Fb</a></span></li>
+									<li><span><a href="https://twitter.com/ReonService" target="_blank">Tw</a></span></li>
+									<li><span><a href="https://www.linkedin.com/in/michael-westen-6a3403164/" target="_blank">Li</a></span></li>
+									<li><span><a href="https://plus.google.com/u/3/100391155709504421478" target="_blank">G+</a></span></li>
+								</ul>  
+								<div></div>              
+							</div>
 					</div>
 				</div>
-			</footer> -->
-
-<!-- Footer -->
-<footer>        	
-	<div id="footer-container">
-		<div class="container">
-				<div class="copyright-wrap">            	
-					<div class="copyright-icon"><i class="fa fa-copyright"></i></div>
-					<div class="copyright-text">Copyright</div>
-					<div class="copyright">
-						<p>2019 © <a class="link" target="_blank" href="#">Reonnet</a>.</p>
-					</div>
-				</div>
-				
-				<div class="socials-wrap">            	
-					<div class="socials-icon"><i class="fa fa-share-alt"></i></div>
-					<div class="socials-text">Follow Us</div>
-					<ul class="socials">
-						<li><span><a href="#" target="_blank">Fb</a></span></li>
-						<li><span><a href="#" target="_blank">Db</a></span></li>
-						<li><span><a href="#" target="_blank">Tw</a></span></li>
-						<li><span><a href="#" target="_blank">Be</a></span></li>
-					</ul>  
-					<div></div>              
-				</div>
+			</footer>
+			<!--/Footer -->
 		</div>
 	</div>
-</footer>
-<!--/Footer -->
-
-
+	<div class="menu-content">
+		<div class="menu-wrapper">
+			<div class="menu">
+				<ul>
+					<li>
+						<a href="#">Portfolio</a>
+					</li>
+					<li>
+						<a href="#">News@Reonnet</a>
+					</li>
+					<li>
+						<a href="#">Get In Touch</a>
+					</li>
+				</ul>
+			</div>
+			<footer>        	
+					<div id="footer-container">
+						<div class="container">
+								<div class="copyright-wrap">            	
+									<div class="copyright-icon"><i class="fa fa-copyright"></i></div>
+									<div class="copyright-text">Copyright</div>
+									<div class="copyright">
+										<p>2019 © <a class="link" target="_blank" href="index.html">REONNET.COM</a></p>
+									</div>
+								</div>
+								
+								<div class="socials-wrap">            	
+									<div class="socials-icon"><i class="fa fa-share-alt"></i></div>
+									<div class="socials-text">Follow Us</div>
+									<ul class="socials">
+										<li><span><a href="https://www.facebook.com/Reonnet-318071822059070/" target="_blank">Fb</a></span></li>
+										<li><span><a href="https://twitter.com/ReonService" target="_blank">Tw</a></span></li>
+										<li><span><a href="https://www.linkedin.com/in/michael-westen-6a3403164/" target="_blank">Li</a></span></li>
+										<li><span><a href="https://plus.google.com/u/3/100391155709504421478" target="_blank">G+</a></span></li>
+									</ul>  
+									<div></div>              
+								</div>
+						</div>
+					</div>
+				</footer>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -162,7 +184,7 @@
 
 			function parallax_height() {
 				var scroll_top = $(this).scrollTop();
-				if ($(window).scrollTop() >= $(".sample-section").offset().top - 230) {
+				if ($(window).scrollTop() >= $(".sample-section").offset().top - 265) {
 					$(".sample-header").css({
 						transition: 'height 500ms ease-out'
 					});
@@ -170,18 +192,18 @@
 						height: '50px'
 					});
 					$(".sample-header-section").css("display", 'none');
-					$("nav .top").addClass("disappear");
+					$("nav .top").addClass("shrink");
 					$("nav").css("padding", "10px 0");
 					$("nav").addClass("bg-visible");
 					$("nav").removeClass("bg-hidden");
-					$("nav .bottom").css("padding-top", "0px");
+					// $("nav .top").addClass("disappear");
+					// $("nav .bottom").css("padding-top", "0px");
 				} else {
 					$(".sample-header").css({
 						transition: 'none'
 					});
 					$(".sample-header-section").css("display", 'flex');
-					$("nav .top").removeClass("disappear");
-					$("nav .bottom").css("padding-top", "10px");
+					$("nav .top").removeClass("shrink");
 					$("nav").removeClass("bg-visible");
 					$("nav").addClass("bg-hidden");
 					$("nav").css("padding", "25px 0");
@@ -206,6 +228,8 @@
 						"filter",
 						"blur(" + (0.003 + parseInt($(window).scrollTop() / 20)) + "px)"
 					);
+					// $("nav .top").removeClass("disappear");
+					// $("nav .bottom").css("padding-top", "10px");
 				}
 			}
 
@@ -256,6 +280,13 @@
 				.addTo(controller);
 		}
 
+	</script>
+
+	<script>
+		$('.menu-burger-wrapper').on('click', function(){
+			$('.menu-burger-wrapper').toggleClass('menu-active');
+			$('.menu-content').toggleClass('active');
+		});
 	</script>
 </body>
 
