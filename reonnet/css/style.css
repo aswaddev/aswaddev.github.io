@@ -342,13 +342,18 @@ nav .bottom img {
     }
 
     .sample-header-section h1 {
-        font-size: 60px;
+        font-size: 37px;
         text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
         padding: 10px;
         position: relative;
         top: 30px;
         color: #fcfcfc;
         letter-spacing: 2px;
+    }
+
+    #header-text strong {
+        font-family: frontage-outline;
+        font-size: 50px;
     }
 
     .header-slide-up {
