@@ -29,15 +29,11 @@
 		<div class="nav-bg"></div>
 			<div class="top">
 				<a href="index.html" id="logo-wrap"><img src="./images/logo-white.png" alt="" id="logo"></a>
-				<div class="menu-burger-wrapper">
-					<div class="trigger menu-trigger">
-						<div class="menu-burger icon-wrapper">
-							<div class="line line-top"></div>
-							<div class="line line-center"></div>
-							<div class="line line-bottom"></div>
-						</div>
-					</div>
-				</div>
+				<ul id="menu-wrapper">
+						<li></li>
+						<li></li>
+						<li></li>
+				</ul>
 			</div>
 	</nav>
 	<div id="loader">
@@ -182,6 +178,20 @@
 		$(document).ready(function() {
 			$(this).scrollTop(0);
 
+			$('ul#menu-wrapper').click(function(){
+					$('ul').toggleClass('active');
+					$('.menu-content').toggleClass('active');
+			});
+
+			// parallax_height();
+			$(window).scroll(function() {
+				parallax_height();
+			});
+
+			$(window).resize(function() {
+				parallax_height();
+			});
+
 			function parallax_height() {
 				var scroll_top = $(this).scrollTop();
 				if ($(window).scrollTop() >= $(".sample-section").offset().top - 265) {
@@ -232,15 +242,6 @@
 					// $("nav .bottom").css("padding-top", "10px");
 				}
 			}
-
-			// parallax_height();
-			$(window).scroll(function() {
-				parallax_height();
-			});
-
-			$(window).resize(function() {
-				parallax_height();
-			});
 		});
 
 	</script>
@@ -263,7 +264,12 @@
 		callToAction.addEventListener('click', function(e) {
 			$('html, body').animate({
 				scrollTop: window.innerHeight
-			}, 'slow');
+			},{
+				duration: 0,
+				specialEasing: {
+				width: "linear",
+				height: "easeOutBounce"
+			}});
 		});
 
 	</script>
@@ -279,14 +285,6 @@
 				.setClassToggle(revealElements[i], "visible") // add class toggle
 				.addTo(controller);
 		}
-
-	</script>
-
-	<script>
-		$('.menu-burger-wrapper').on('click', function(){
-			$('.menu-burger-wrapper').toggleClass('menu-active');
-			$('.menu-content').toggleClass('active');
-		});
 	</script>
 </body>
 

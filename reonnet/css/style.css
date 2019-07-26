@@ -17,7 +17,6 @@ footer {
     color: #1a1a1a;
 }
 
-
 .sample-header {
     overflow: none;
     position: fixed;
@@ -25,6 +24,7 @@ footer {
     top: 0;
     width: 100%;
     background-image: url("../images/caspar-camille-rubin-oI6zrBj3nKw-unsplash.jpg");
+    /* background-attachment: fixed; */
     background-position: center;
     min-width: 100%;
     background-repeat: no-repeat;
@@ -55,6 +55,7 @@ footer {
     bottom: 0;
     left: 0;
     background-image: url("../images/caspar-camille-rubin-oI6zrBj3nKw-unsplash-blur.jpg");
+    /* background-attachment: fixed; */
     background-position: center;
     min-width: 100%;
     background-repeat: no-repeat;
@@ -197,6 +198,8 @@ footer {
     animation-timing-function: ease-out;
 }
 
+
+
 @keyframes scale-out {
     from {
         transform: scale(1);
@@ -221,9 +224,7 @@ footer {
     }
 }
 
-
 nav {
-    overflow: hidden !important;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -240,7 +241,6 @@ nav {
 
 nav .top {
     width: 100%;
-    overflow: hidden !important;
     transition: all 450ms ease-in-out;
     display: flex;
     align-items: center;
@@ -278,100 +278,72 @@ nav .top ul li a {
     border-bottom: 0px solid #fcfcfc;
 }
 
-.shrink .menu-burger-wrapper {
+.shrink #menu-wrapper {
     position: relative;
-    transform: scale(0.7);
-    bottom: 3px;
+    bottom: 10px;
     transition: transform 450ms ease-in-out;
+    transform: scale(0.7);
 }
 
 .shrink #logo-wrap {
-    /* width: 32px; */
     overflow: hidden;
     position: relative;
-    bottom: 3px;
+    bottom: 8px;
 }
 
 .shrink #logo-wrap img {
     transform: scale(0.7);
 }
 
-
-.menu-burger-wrapper {
-    width: 30px;
-    height: 20px;
+ul#menu-wrapper {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    margin: 0;
+    padding: 0;
     cursor: pointer;
 }
 
-.menu-burger-wrapper .menu-trigger {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.menu-burger-wrapper .menu-burger {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition: transform 0.4s;
-    -webkit-transition: transform 0.4s;
-}
-
-.menu-burger-wrapper .line {
-    background: #fff;
-    height: 2px;
-    width: 100%;
+ul#menu-wrapper li {
+    list-style-type: none;
     position: absolute;
-    left: 0;
-    transform-origin: 50% 50%;
-    -webkit-transform-origin: 50% 50%;
-    transition: transform 0.5s 0.08s, background-color 0.5s, top 0.5s 0.08s, left 0.3s, opacity 0.5s, width 0.6s 0.05s;
-    -webkit-transition: transform 0.5s 0.08s, background-color 0.5s, top 0.5s 0.08s, left 0.3s, opacity 0.5s, width 0.6s 0.05s;
+    border: 1px solid #fcfcfc;
+    background: #fcfcfc;
+    border-radius: 50%;
+    transition: 0.5s;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    transform: scale(0.20);
 }
 
-.menu-burger-wrapper .line.line-top {
-    top: 0;
+ul#menu-wrapper li:nth-child(1) {
+    left: -15px;
 }
 
-.menu-burger-wrapper .line.line-center {
-    top: 50%;
-    width: 75%;
+ul#menu-wrapper.active li:nth-child(2) {
+    transform: scale(1);
+    background: transparent;
 }
 
-.menu-burger-wrapper .line.line-bottom {
-    top: 100%;
+ul#menu-wrapper li:nth-child(3) {
+    left: 15px;
 }
 
-.menu-active .menu-burger .line-top {
-    top: 50%;
-    transform: rotate(45deg) translate(0, -50%);
-    -webkit-transform: rotate(45deg) translate(0, -50%);
+ul#menu-wrapper.active li:nth-child(1) {
+    width: 240px;
+    border-radius: 0;
+    transition-delay: 0.5s;
+    transform: scale(.10) translate(-310%, 0) rotate(45deg);
 }
 
-.menu-active .menu-burger .line-center {
-    opacity: 0;
-    left: -5px;
-    width: 0;
+ul#menu-wrapper.active li:nth-child(3) {
+    height: 240px;
+    border-radius: 0;
+    transition-delay: 0.5s;
+    transform: scale(.10) translate(-240%, -375%) rotate(45deg);
 }
 
-.menu-active .menu-burger .line-bottom {
-    top: 50%;
-    transform: rotate(-45deg) translate(0, -50%);
-    -webkit-transform: rotate(-45deg) translate(0, -50%);
-}
-
-nav .bottom {
-    transition: .45s ease-in-out;
-    position: sticky;
-    padding-top: 10px;
-    border: none;
-}
-
-nav .bottom img {
-    padding-right: 15px;
-    box-sizing: content-box;
-    border-right: 1px solid #fcfcfc;
-}
 
 .disappear {
     position: absolute;
@@ -942,8 +914,12 @@ footer .socials-wrap {
 
 
 @media only screen and (max-width: 600px) {
-    nav .top ul {
-        display: none;
+    nav {
+        padding: 0;
+    }
+
+    nav .top {
+        padding: 15px;
     }
 
     .sample-section {
