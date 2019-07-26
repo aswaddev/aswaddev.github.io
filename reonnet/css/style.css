@@ -24,9 +24,9 @@ footer {
     left: 0;
     top: 0;
     width: 100%;
-    background-image: url("../images/header.jpg");
+    background-image: url("../images/caspar-camille-rubin-oI6zrBj3nKw-unsplash.jpg");
     background-position: center;
-    background-size: cover;
+    min-width: 100%;
     background-repeat: no-repeat;
     z-index: 4;
     animation-fill-mode: forwards;
@@ -54,9 +54,9 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url("../images/header-blur.jpg");
+    background-image: url("../images/caspar-camille-rubin-oI6zrBj3nKw-unsplash-blur.jpg");
     background-position: center;
-    background-size: cover;
+    min-width: 100%;
     background-repeat: no-repeat;
     opacity: 0;
 }
@@ -128,7 +128,6 @@ footer {
     font-size: 80px;
     line-height: 90px;
     font-weight: 600;
-    -webkit-text-stroke: 1px #000;
 }
 
 #header-text span.hollow {
@@ -494,7 +493,7 @@ footer {
     background: #1a1a1a;
     overflow: hidden;
     height: 120px;
-    background: url('../images/header-blur.jpg');
+    background: url('../images/caspar-camille-rubin-oI6zrBj3nKw-unsplash-blur.jpg');
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
