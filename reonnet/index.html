@@ -27,7 +27,7 @@
 <body id="body">
 	<nav>
 		<div class="nav-bg"></div>
-			<div class="top">
+			<div class="top container">
 				<a href="index.html" id="logo-wrap"><img src="./images/logo-white.png" alt="" id="logo"></a>
 				<ul id="menu-wrapper">
 						<li></li>
@@ -43,10 +43,7 @@
 		<div class="blur-bg"></div>
 		<div class="sample-header-section">
 			<div class="container">
-				<h1 class="header-slide-up" id="header-text">
-					ABOUT<br>
-					<span class="hollow">US</span>
-				</h1>
+				<img src="./images/header-title.svg" alt="" class="header-slide-up" id="header-text">
 				<div id="call-to-action">
 					<div class="dot"></div>
 				</div>
@@ -203,11 +200,8 @@
 					});
 					$(".sample-header-section").css("display", 'none');
 					$("nav .top").addClass("shrink");
-					$("nav").css("padding", "10px 0");
 					$("nav").addClass("bg-visible");
 					$("nav").removeClass("bg-hidden");
-					// $("nav .top").addClass("disappear");
-					// $("nav .bottom").css("padding-top", "0px");
 				} else {
 					$(".sample-header").css({
 						transition: 'none'
@@ -216,7 +210,6 @@
 					$("nav .top").removeClass("shrink");
 					$("nav").removeClass("bg-visible");
 					$("nav").addClass("bg-hidden");
-					$("nav").css("padding", "25px 0");
 					var sample_section_top = $(".sample-section").offset().top;
 					var header_height = $(".sample-header-section").outerHeight();
 					$(".sample-section").css({
