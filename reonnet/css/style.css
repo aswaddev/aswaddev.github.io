@@ -23,10 +23,10 @@ footer {
     left: 0;
     top: 0;
     width: 100%;
-    background-image: url("../images/caspar-camille-rubin-oI6zrBj3nKw-unsplash.jpg");
-    /* background-attachment: fixed; */
+    background-image: url("../images/aboutus.jpg");
     background-position: center;
     min-width: 100%;
+    height: 100vh;
     background-repeat: no-repeat;
     z-index: 4;
     animation-fill-mode: forwards;
@@ -54,8 +54,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url("../images/caspar-camille-rubin-oI6zrBj3nKw-unsplash-blur.jpg");
-    /* background-attachment: fixed; */
+    background-image: url("../images/aboutus-blur.jpg");
     background-position: center;
     min-width: 100%;
     background-repeat: no-repeat;
@@ -155,7 +154,7 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 15;
+    z-index: 11;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -163,7 +162,6 @@ footer {
     justify-content: center;
     animation-fill-mode: forwards;
     animation-delay: 3000ms;
-    animation-duration: 500ms;
     animation-name: fade-out;
     animation-timing-function: ease-out;
 }
@@ -206,7 +204,7 @@ nav {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    z-index: 245;
+    z-index: 16;
     width: 100%;
     display: flex;
     align-items: center;
@@ -282,43 +280,51 @@ ul#menu-wrapper {
 ul#menu-wrapper li {
     list-style-type: none;
     position: absolute;
-    border: 1px solid #fcfcfc;
+    border: 2px solid #fcfcfc;
     background: #fcfcfc;
     border-radius: 50%;
     transition: 0.5s;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     box-sizing: border-box;
-    transform: scale(0.20);
+    transform: scale(0.15);
 }
 
 ul#menu-wrapper li:nth-child(1) {
-    left: -15px;
+    left: -10px;
 }
+
+
+ul#menu-wrapper li:nth-child(2) {
+    opacity: 0;
+}
+
 
 ul#menu-wrapper.active li:nth-child(2) {
     transform: scale(1);
     background: transparent;
+    opacity: 0.75;
 }
 
 ul#menu-wrapper li:nth-child(3) {
-    left: 15px;
+    left: 10px;
 }
 
 ul#menu-wrapper.active li:nth-child(1) {
-    width: 240px;
+    width: 200px;
     border-radius: 0;
     transition-delay: 0.5s;
-    transform: scale(.10) translate(-310%, 0) rotate(45deg);
+    transform: scale(0.085) translate(-380%, 0) rotate(45deg);
+
 }
 
 ul#menu-wrapper.active li:nth-child(3) {
-    height: 240px;
+    height: 200px;
     border-radius: 0;
     transition-delay: 0.5s;
-    transform: scale(.10) translate(-240%, -375%) rotate(45deg);
-}
+    transform: scale(.085) translate(-240%, -440%) rotate(45deg);
 
+}
 
 .disappear {
     position: absolute;
@@ -345,6 +351,9 @@ ul#menu-wrapper.active li:nth-child(3) {
 }
 
 .bg-visible {
+    background-image: url('../images/nav-bg.png');
+    background-repeat: repeat-x;
+    background-size: contain;
     padding: 0;
 }
 
@@ -352,7 +361,6 @@ ul#menu-wrapper.active li:nth-child(3) {
     display: block;
     position: relative;
     top: 0;
-    z-index: 9999999 !important;
     transition: .45s ease-in-out;
 }
 
@@ -441,7 +449,7 @@ footer {
     background: #1a1a1a;
     overflow: hidden;
     height: 120px;
-    background: url('../images/caspar-camille-rubin-oI6zrBj3nKw-unsplash-blur.jpg');
+    background: url('../images/aboutus-blur.jpg');
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
@@ -965,7 +973,7 @@ footer .socials-wrap {
     position: fixed;
     top: 0;
     left: 100%;
-    z-index: 240;
+    z-index: 15;
     transition: all 600ms ease-out;
 }
 
@@ -1049,7 +1057,7 @@ footer .socials-wrap {
         display: block;
         position: fixed;
         top: 0;
-        z-index: 240;
+        z-index: 15;
     }
 
     .menu-wrapper {
