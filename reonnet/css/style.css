@@ -301,7 +301,7 @@ ul#menu-wrapper li:nth-child(2) {
 
 
 ul#menu-wrapper.active li:nth-child(2) {
-    transform: scale(1);
+    transform: scale(0.80);
     background: transparent;
     opacity: 0.75;
 }
@@ -312,18 +312,19 @@ ul#menu-wrapper li:nth-child(3) {
 
 ul#menu-wrapper.active li:nth-child(1) {
     width: 200px;
+    height: 30px;
     border-radius: 0;
     transition-delay: 0.5s;
-    transform: scale(0.085) translate(-380%, 0) rotate(45deg);
+    transform: scale(0.085) translate(-382%, 400%) rotate(45deg);
 
 }
 
 ul#menu-wrapper.active li:nth-child(3) {
     height: 200px;
+    width: 30px;
     border-radius: 0;
     transition-delay: 0.5s;
-    transform: scale(.085) translate(-240%, -440%) rotate(45deg);
-
+    transform: scale(.085) translate(-80%, -440%) rotate(45deg);
 }
 
 .disappear {
@@ -450,7 +451,7 @@ footer {
     overflow: hidden;
     height: 120px;
     background: url('../images/aboutus-blur.jpg');
-    background-position: top;
+    background-position: bottom;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
