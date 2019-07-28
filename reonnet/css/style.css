@@ -17,7 +17,7 @@ footer {
     color: #1a1a1a;
 }
 
-.sample-header {
+.header {
     overflow: none;
     position: fixed;
     left: 0;
@@ -61,7 +61,7 @@ footer {
     opacity: 0;
 }
 
-.sample-header-section {
+.header-section {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -74,7 +74,7 @@ footer {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-.sample-header-section #call-to-action {
+.header-section #call-to-action {
     height: 45px;
     width: 45px;
     border: 1px solid #f2f2f2;
@@ -92,20 +92,20 @@ footer {
     cursor: pointer;
 }
 
-.sample-header-section #call-to-action:hover {
+.header-section #call-to-action:hover {
     transform: scale(1.2);
 }
 
-.sample-header-section #call-to-action:active {
+.header-section #call-to-action:active {
     transform: scale(0.5);
     background: #fff;
 }
 
-.sample-header-section #call-to-action:hover .dot {
+.header-section #call-to-action:hover .dot {
     transform: scale(0.9);
 }
 
-.sample-header-section #call-to-action .dot {
+.header-section #call-to-action .dot {
     height: 5px;
     width: 5px;
     background: #fff;
@@ -137,13 +137,13 @@ footer {
 }
 
 
-.sample-section-wrap {
+.content-wrap {
     position: relative;
     background-color: #fff;
     z-index: 3;
 }
 
-.sample-section {
+.content {
     position: relative;
     margin-top: 100vh;
     padding-top: 10vh;
@@ -893,19 +893,19 @@ footer .socials-wrap {
         padding: 0;
     }
 
-    .sample-section {
+    .content {
         margin-top: 100vh;
     }
 
-    .sample-header-section {
+    .header-section {
         height: 100vh;
     }
 
-    .sample-header-section #call-to-action {
+    .header-section #call-to-action {
         bottom: 80px;
     }
 
-    .sample-header-section h1 {
+    .header-section h1 {
         text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
         padding: 10px;
         position: relative;
@@ -1079,7 +1079,7 @@ footer .socials-wrap {
 
 @media (max-width:700px) {
 
-    .sample-header-section .container {
+    .header-section .container {
         margin: auto;
         text-align: center;
     }
@@ -1099,27 +1099,27 @@ footer .socials-wrap {
     }
 }
 
-.sample-section .text {
+.content .text {
     color: #1a1a1a;
     display: block;
 }
 
-.sample-section .paragraph {
+.content .paragraph {
     width: 0px !important;
     overflow: hidden;
 }
 
-.sample-section .paragraph.scale {
+.content .paragraph.scale {
     animation: accent-color-slide-reveal 1.2s ease-in-out forwards;
 }
 
-.sample-section .revealed {
+.content .revealed {
     display: block;
     text-align: left;
     position: relative;
 }
 
-.sample-section .revealed::after {
+.content .revealed::after {
     content: "";
     background: rgba(255, 255, 255, 0.6);
     position: absolute;

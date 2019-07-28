@@ -6,7 +6,6 @@ $(document).ready(function() {
     $('.menu-content').toggleClass('active');
   });
 
-  // parallax_height();
   $(window).scroll(function() {
     parallax_height();
   });
@@ -17,48 +16,43 @@ $(document).ready(function() {
 
   function parallax_height() {
     var scroll_top = $(this).scrollTop();
-    if ($(window).scrollTop() >= $('.sample-section').offset().top - 265) {
-      $('.sample-header').css({
+    if ($(window).scrollTop() >= $('.content').offset().top - 265) {
+      $('.header').css({
         transition: 'height 500ms ease-out'
       });
-      $('.sample-header').css({
+      $('.header').css({
         height: '50px'
       });
-      $('.sample-header-section').css('display', 'none');
+      $('.header-section').css('display', 'none');
       $('nav .top').addClass('shrink');
       $('nav').addClass('bg-visible');
       $('nav').removeClass('bg-hidden');
     } else {
-      $('.sample-header').css({
+      $('.header').css({
         transition: 'none'
       });
-      $('.sample-header-section').css('display', 'flex');
+      $('.header-section').css('display', 'flex');
       $('nav .top').removeClass('shrink');
       $('nav').removeClass('bg-visible');
       $('nav').addClass('bg-hidden');
-      var sample_section_top = $('.sample-section').offset().top;
-      var header_height = $('.sample-header-section').outerHeight();
-      $('.sample-section').css({
+      var sample_section_top = $('.content').offset().top;
+      var header_height = $('.header-section').outerHeight();
+      $('.content').css({
         'margin-top': header_height
       });
-      $('.sample-header').css({
+      $('.header').css({
         height: header_height - scroll_top
       });
       $('.blur-bg').css('opacity', $(window).scrollTop() * 0.005);
-      $('.sample-header-section h1').css(
+      $('.header-section h1').css(
         'top',
         50 + $(window).scrollTop() * 0.1 + '%'
       );
-      $('.sample-header-section h1').css(
-        'opacity',
-        1 - $(window).scrollTop() * 0.003
-      );
-      $('.sample-header-section h1').css(
+      $('.header-section h1').css('opacity', 1 - $(window).scrollTop() * 0.003);
+      $('.header-section h1').css(
         'filter',
         'blur(' + (0.003 + parseInt($(window).scrollTop() / 20)) + 'px)'
       );
-      // $("nav .top").removeClass("disappear");
-      // $("nav .bottom").css("padding-top", "10px");
     }
   }
   var elements = document.querySelectorAll('.text');
