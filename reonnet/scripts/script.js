@@ -61,6 +61,43 @@ $(document).ready(function() {
       // $("nav .bottom").css("padding-top", "10px");
     }
   }
+  var elements = document.querySelectorAll('.text');
+
+  function adjustParagraphWidths() {
+    elements.forEach(element => {
+      element.style.width =
+        element.parentNode.parentNode.clientWidth - 50 + 'px';
+    });
+  }
+
+  adjustParagraphWidths();
+
+  window.addEventListener('resize', adjustParagraphWidths);
+
+  var isInViewport = function(e) {
+    var element = e.getBoundingClientRect();
+    var html = document.documentElement;
+    var toleranceY = 150;
+    return (
+      element.top >= 0 - toleranceY &&
+      element.left >= 0 &&
+      element.bottom <=
+        (window.innerHeight || html.clientHeight) + element.height - 100 &&
+      element.right <= (window.innerWidth || html.clientWidth)
+    );
+  };
+
+  window.addEventListener('scroll', e => {
+    const scrolled = window.scrollY;
+    elements.forEach(element => {
+      if (isInViewport(element.parentNode)) {
+        if (!element.classList.contains('revealed')) {
+          element.parentNode.classList.add('scale');
+          element.classList.add('revealed');
+        }
+      }
+    });
+  });
 });
 
 var loader = document.getElementById('loader');
@@ -86,22 +123,9 @@ callToAction.addEventListener('click', function(e) {
     {
       duration: 0,
       specialEasing: {
-        width: 'linear',
-        height: 'easeOutBounce'
+        width: 'easeOutExpo',
+        height: 'easeOutExpo'
       }
     }
   );
 });
-
-// build scenes
-var revealElements = document.getElementsByClassName('paragraph');
-for (var i = 0; i < revealElements.length; i++) {
-  // create a scene for each element
-  new ScrollMagic.Scene({
-    triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
-    offset: 50, // start a little later
-    triggerHook: 0.9
-  })
-    .setClassToggle(revealElements[i], 'visible') // add class toggle
-    .addTo(controller);
-}
