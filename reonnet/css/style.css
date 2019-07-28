@@ -923,7 +923,7 @@ footer .socials-wrap {
 
 .menu-content .menu ul li a {
     color: #454545;
-    font-size: 39px;
+    font-size: 40px;
     text-decoration: none;
     padding: 20px;
 }
@@ -1019,9 +1019,23 @@ footer .socials-wrap {
         margin: auto;
         text-align: center;
     }
+
+    .menu-content .menu ul li a {
+        color: #454545;
+        font-size: 30px;
+        text-decoration: none;
+        padding: 20px;
+    }
 }
 
 @media (max-width:400px) {
+    .menu-content .menu ul li a {
+        color: #454545;
+        font-size: 30px;
+        text-decoration: none;
+        padding: 20px;
+    }
+
     #header-text {
         width: 250px;
         margin: auto;
