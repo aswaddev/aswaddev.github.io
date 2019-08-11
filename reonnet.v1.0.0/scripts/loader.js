@@ -10,8 +10,8 @@ window.addEventListener('load', function() {
       loader.style.visibility = 'hidden';
       document.querySelector('.header').classList.add('loaded');
       document.querySelector('#header-text').classList.add('loaded');
-      document.querySelector('#menu-wrapper').style.opacity = 1;
-      document.querySelector('#menu-wrapper').style.visibility = 'visible';
+      // document.querySelector('#menu-wrapper').style.opacity = 1;
+      // document.querySelector('#menu-wrapper').style.visibility = 'visible';
     }
   });
 });

@@ -2,7 +2,7 @@ $(document).ready(function() {
   $(this).scrollTop(0);
 
   $('ul#menu-wrapper').click(function() {
-    $('ul').toggleClass('active');
+    $('ul#menu-wrapper').toggleClass('active');
     $('.menu-content').toggleClass('active');
   });
 
