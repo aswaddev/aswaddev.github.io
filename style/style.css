@@ -386,10 +386,10 @@ section#about #about-row .col#about-me .card {
 }
 
 section#about #about-row .col#about-me #about-picture {
-	background-image: url("../img/profile.jpg");
+	background-image: url("../img/profile-2019.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: cover;
 	flex-basis: 40%;
 	min-height: 600px;
 }
@@ -478,6 +478,7 @@ section#about #about-row #my-skills ul li .progress #javascript-skills,
 section#about #about-row #my-skills ul li .progress #reactjs-skills,
 section#about #about-row #my-skills ul li .progress #mern-skills,
 section#about #about-row #my-skills ul li .progress #php-skills,
+section#about #about-row #my-skills ul li .progress #yii2-skills,
 section#about #about-row #my-skills ul li .progress #database-skills,
 section#about #about-row #my-skills ul li .progress #ui-skills {
 	height: 100%;
@@ -491,22 +492,26 @@ section#about #about-row #my-skills ul li .progress #ui-skills {
 
 section#about #about-row #my-skills ul li .progress #html5-skills,
 section#about #about-row #my-skills ul li .progress #css3-skills,
-section#about #about-row #my-skills ul li .progress #javascript-skills{
+section#about #about-row #my-skills ul li .progress #javascript-skills {
 	width: 95%;
 }
 
 section#about #about-row #my-skills ul li .progress #database-skills,
+section#about #about-row #my-skills ul li .progress #yii2-skills,
 section#about #about-row #my-skills ul li .progress #ui-skills {
 	width: 90%;
 }
 
-section#about #about-row #my-skills ul li .progress #mern-skills,
-section#about #about-row #my-skills ul li .progress #php-skills {
+section#about #about-row #my-skills ul li .progress #mern-skills {
 	width: 85%;
 }
 
+section#about #about-row #my-skills ul li .progress #php-skills {
+	width: 90%;
+}
+
 section#about #about-row #my-skills ul li .progress #reactjs-skills {
-	width: 80%;
+	width: 90%;
 }
 
 section#portfolio {

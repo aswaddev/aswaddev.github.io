@@ -931,6 +931,16 @@ footer .socials-wrap {
   }
 }
 
+@media only screen and (min-width: 1000px) {
+  .menu-content .menu {
+    padding-top: 90px;
+  }
+  .menu-content a {
+    padding: 20px 0;
+    font-size: 1.7vw;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   ul#expanded {
     display: none !important;
