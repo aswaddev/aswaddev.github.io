@@ -1,0 +1,476 @@
+.overlay {
+  width: 100%;
+  height: 100vh;
+}
+
+#overlay-3 {
+  z-index: 1000;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  background: none;
+  height: 50px;
+}
+
+#overlay-3 nav {
+  position: relative;
+  left: 0px;
+}
+
+#overlay-3 nav ul {
+  list-style-type: none;
+}
+
+#overlay-3 nav ul li {
+  display: inline;
+  padding: 0 20px;
+  color: #fff;
+  border-right: 1px solid #fff;
+  opacity: 1;
+}
+
+#overlay-3 nav ul li:last-child {
+  border-right: none;
+}
+
+#overlay-3 nav ul li a {
+  transition: all 300ms;
+}
+
+#overlay-3 nav ul li a:hover {
+  font-weight: bold;
+  font-size: 17px;
+  padding: 0 5px;
+}
+
+.nav-light {
+  background-color: #fff !important;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.08);
+}
+
+.nav-light a {
+  color: #8e65c0;
+}
+
+.nav-transparent {
+  background: #fff;
+}
+
+section#hero {
+  overflow: hidden;
+  position: relative;
+  min-height: 575px;
+}
+
+section#hero img {
+  object-fit: cover;
+  width: 100%;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+section#hero .bg-overlay {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(142, 101, 192, 0.9);
+}
+
+section#hero .container {
+  margin: auto;
+  z-index: 0;
+  color: #fff;
+  line-height: 0.9;
+  display: flex;
+  padding-top: 65px;
+  align-items: center;
+  min-height: 575px;
+  padding-bottom: 20px;
+}
+
+section#hero .container #content {
+  z-index: 4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+section#hero .container h1,
+section#hero .container h5 {
+  font-size: 70px;
+  font-weight: bold;
+  max-width: 700px;
+}
+
+section#hero .container p {
+  font-size: 25px;
+  max-width: 700px;
+}
+
+section#hero h1,
+section#hero h5 {
+  margin: 0;
+}
+
+section#hero button {
+  box-sizing: border-box;
+  position: relative;
+  border: 2px solid #fff;
+  box-shadow: 4px 4px 0px 0px #fff;
+  background: none;
+  color: #fff;
+  padding: 15px 15px;
+  text-transform: uppercase;
+  transition: all 300ms ease-in-out;
+  left: 0;
+  top: 0;
+}
+
+section#hero button:hover {
+  cursor: pointer;
+  left: 4px;
+  top: 4px;
+  background: #8e65c0;
+  color: #fff;
+  box-shadow: 0px 0px 0px 0px #8e65c0;
+}
+
+section#blog-posts .container,
+section#contact .container {
+  padding: 50px 0;
+  min-height: 100vh;
+}
+
+section#blog-posts .container,
+section#contact .container {
+  min-height: 50vh;
+}
+
+section#blog-posts h1,
+section#contact h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+section#blog-posts h2,
+section#contact h2 {
+  padding: 20px;
+}
+
+section#blog-posts {
+  min-height: 50vh;
+  background: #fff;
+  color: var(--shade-of-black);
+}
+
+section#blog-posts .content {
+  position: relative;
+  z-index: 100;
+  padding: 40px;
+}
+
+section#blog-posts .underline {
+  background: var(--shade-of-black);
+}
+
+section#blog-posts #posts {
+  margin: 50px auto;
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
+}
+
+section#blog-posts .card {
+  width: 100%;
+  height: 570px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  box-shadow: 4px 4px 7px #000;
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 3000ms ease-in-out;
+}
+section#blog-posts .card a {
+  width: 100%;
+  height: 570px;
+  display: flex;
+  align-items: flex-end;
+}
+
+section#blog-posts .card:hover {
+  cursor: pointer;
+}
+section#blog-posts .card .bg-overlay {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(142, 101, 192, 0.9);
+}
+
+section#blog-posts .card .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  position: absolute;
+  /* z-index: -1; */
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+section#blog-posts .card h1 {
+  line-height: 0.9;
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+section#blog-posts .card p {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  color: white;
+}
+
+section#blog-posts .card h4 {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  color: white;
+}
+
+section#blog-posts .card .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 20%;
+  color: #fff;
+  box-sizing: border-box;
+  background: #000;
+}
+
+section#contact .container {
+  width: 100%;
+}
+
+section#contact {
+  min-height: 50vh;
+  background: var(--shade-of-black);
+  color: #fff;
+  text-align: center;
+  -webkit-clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+  padding-top: 5%;
+}
+
+section#contact h4 {
+  margin: 40px 0;
+}
+
+section#contact form {
+  width: 50%;
+  margin: auto;
+}
+
+section#contact form input,
+section#contact form textarea {
+  box-sizing: border-box;
+  display: block;
+  margin: 18px auto;
+  border: none;
+  padding: 10px 10px;
+  font-size: 16px;
+  font-family: raleway;
+  background: #f5f5f5;
+  color: var(--shade-of-black);
+  font-weight: bold;
+  width: 100%;
+}
+
+section#contact form input[type='submit'] {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  width: 20%;
+  margin: 0 0 0 auto;
+  box-shadow: 4px 4px 0px var(--shade-of-purple);
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: all 300ms ease-in-out;
+}
+
+section#contact form input[type='submit']:hover {
+  cursor: pointer;
+  top: 4px;
+  left: 4px;
+  box-shadow: 0px 0px 0px var(--shade-of-purple);
+}
+
+section#contact form textarea {
+  height: 100px;
+}
+
+section#contact form label {
+  float: left;
+  padding-bottom: 15px;
+}
+
+section#social .container {
+  display: flex;
+  padding: 40px 0px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+section#social .link {
+  padding: 15px 20px;
+  transition: all 300ms;
+}
+
+section#social .link i {
+  color: var(--shade-of-black);
+  font-size: 25px;
+}
+
+section#social .link:hover {
+  background: #c7c7c7;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  section#blog-posts #posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  section#contact .container,
+  section#blog-posts .container {
+    padding: 50px 20px;
+  }
+
+  section#contact form {
+    width: 90%;
+    margin: auto;
+  }
+
+  section#contact form input[type='submit'] {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #overlay-3 {
+    background: #fff;
+    z-index: -99999;
+  }
+
+  #nav-icon,
+  #nav-icon-bg {
+    display: block;
+  }
+
+  #nav-icon {
+    z-index: 10000;
+  }
+
+  #overlay-menu {
+    z-index: 999;
+  }
+
+  section#hero .container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    line-height: 0.9;
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+
+  section#hero button {
+    box-shadow: 0px 4px 0px 0px#fff;
+    color: #fff;
+    margin: 10px 0;
+    top: 0;
+  }
+
+  section#hero button:hover {
+    left: 0px;
+    top: 4px;
+    box-shadow: 0px 0px 0px 0px #fff;
+  }
+
+  section#contact form input[type='submit'] {
+    box-shadow: 0px 4px 0px 0px var(--shade-of-purple);
+  }
+
+  section#contact form input[type='submit']:hover {
+    top: 4px;
+    left: 0px;
+  }
+
+  section#blog-posts #posts {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section#contact form {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  section#hero button {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+@media screen and (max-height: 330px) {
+  section#hero .container {
+    padding-top: 20vh;
+  }
+}
