@@ -168,6 +168,15 @@ section#hero .container {
   line-height: 0.9;
 }
 
+@media screen and (max-width: 768px) {
+  section#hero .container h1 {
+    font-size: 40px !important;
+  }
+  section#hero .container h5 {
+    font-size: 20px !important;
+  }
+}
+
 section#hero .container h1,
 section#hero .container h5 {
   font-weight: bold;
