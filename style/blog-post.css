@@ -75,6 +75,19 @@ main {
   bottom: 70px;
 }
 
+@media screen and (max-width: 768px) {
+  div#overlapping {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+  }
+
+  main {
+    position: relative;
+    bottom: 0px;
+  }
+}
+
 section#hero .container {
   margin: auto;
   z-index: 0;

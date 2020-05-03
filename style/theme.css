@@ -157,6 +157,22 @@ main h3 {
   font-size: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  section#hero .container h1,
+  section#hero .container h5 {
+    font-size: 60px !important;
+  }
+  main h1 {
+    font-size: 35px;
+  }
+  main h2 {
+    font-size: 28px;
+  }
+  main h3 {
+    font-size: 25px;
+  }
+}
+
 a.active {
   font-weight: bold;
 }
